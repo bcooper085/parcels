@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" >
+    <meta charset="utf-8">
+    <title>Checkout</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron">
+        <h5>Your parcel length is: @Model.GetLength()</h5>
+        <h5>Your parcel width is: @Model.GetWidth()</h5>
+        <h5>Your parcel height is: @Model.GetHeight()</h5>
+        <h5>Your parcel weight is: @Model.GetWeight()</h5>
+        <h5>Your parcel volume is: @Model.GetVolume()</h5>
+        <h3>Your Total Cost: @Model.CostToShip()</h3>
+      </div>
+    </div>
+  </body>
+</html>
